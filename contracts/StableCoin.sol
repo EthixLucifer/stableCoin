@@ -22,3 +22,5 @@ contract USDT is ERC20, ERC20Burnable {
         _mint(msg.sender, amount);
     }
 }
+
+//Amoy Address: 0x81ac51d7f37Dc921877969CFE40dcbAb09693249

@@ -32,3 +32,5 @@ contract ETHX is ERC20, ERC20Burnable, Ownable, AccessControl{
     }
  
 }
+
+//Amoy Addr: 0x6Ae2fc78D3FdFa3EbF7aa02fD8F4F7c1742b8cC3

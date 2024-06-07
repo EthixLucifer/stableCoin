@@ -76,3 +76,5 @@ contract ETHIXUSDRESERVE is ReentrancyGuard, AccessControl {
         }
     }
 }
+
+//Amoy Address: 0xEEe3CA8A01e5cb4dF257059113F7e54e9BAbb83d

@@ -22,3 +22,5 @@ contract WETH is ERC20, ERC20Burnable {
         _mint(msg.sender, amount);
     }
 }
+
+//Amoy Addr: 0x10bA30Cc5a2986c27A722dB1AfcbFE196302c3D7
