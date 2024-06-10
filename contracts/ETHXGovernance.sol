@@ -77,4 +77,5 @@ function setDataFeedAddress(address contractAddress) external {
 require(hasRole(GOVERN_ROLE, _msgSender()), "You are not allowed to add the Collateral Token");
 datafeed = contractAddress;
 }
-}
+    
+    }        
