@@ -56,5 +56,3 @@ cd final
 cd frontend
 npm run dev
 ```
-
-<img src="https://raw.githubusercontent.com/net2devcrypto/misc/main/stablechart.png" width="500" height="400">
