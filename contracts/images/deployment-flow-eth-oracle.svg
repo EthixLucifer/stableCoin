@@ -69,15 +69,15 @@
   <circle cx="100" cy="610" r="12" fill="#ffce73"/>
   <text x="100" y="610" font-family="Arial" font-size="14" text-anchor="middle" fill="#fff" font-weight="bold">9</text>
   <rect x="120" y="590" width="640" height="40" rx="5" ry="5" fill="#ffce73" fill-opacity="0.2"/>
-  <text x="140" y="615" font-family="Arial" font-size="14" fill="#333" font-weight="bold">Deploy N2USD Contract</text>
+  <text x="140" y="615" font-family="Arial" font-size="14" fill="#333" font-weight="bold">Configure ETHIXUSD Permissions</text>
   <text x="450" y="615" font-family="Arial" font-size="14" fill="#333">grantRole(MANAGER_ROLE, Governance.address)</text>
   
   <!-- Step 10 -->
   <circle cx="100" cy="670" r="12" fill="#ffce73"/>
   <text x="100" y="670" font-family="Arial" font-size="14" text-anchor="middle" fill="#fff" font-weight="bold">10</text>
   <rect x="120" y="650" width="640" height="40" rx="5" ry="5" fill="#ffce73" fill-opacity="0.2"/>
-  <text x="140" y="675" font-family="Arial" font-size="14" fill="#333" font-weight="bold">Mint and Configure N2USD</text>
-  <text x="450" y="675" font-family="Arial" font-size="14" fill="#333">Mint 1,000,000 N2USD tokens, transfer 500,000 to Governance</text>
+  <text x="140" y="675" font-family="Arial" font-size="14" fill="#333" font-weight="bold">Mint and Configure ETHIXUSD</text>
+  <text x="450" y="675" font-family="Arial" font-size="14" fill="#333">Mint 1,000,000 ETHIXUSD tokens, transfer 500,000 to Governance</text>
   
   <!-- Step 11 -->
   <circle cx="100" cy="730" r="12" fill="#78dbbe"/>

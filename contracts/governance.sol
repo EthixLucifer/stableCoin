@@ -68,7 +68,7 @@ contract Governance is Ownable, ReentrancyGuard, AccessControl {
         reserveContract = reserve;
     }
 
-    function ethix2drTokenPrice(uint256 marketcap) external nonReentrant {
+    function ethixTokenPrice(uint256 marketcap) external nonReentrant {
         require(hasRole(GOVERN_ROLE, _msgSender()), "Not allowed");
         ethixsupply = ethix.totalSupply();
         unstableColPrice = ((marketcap).mul(ethixsupply)).div(WEI_VALUE);

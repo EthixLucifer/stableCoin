@@ -3,7 +3,7 @@
   <rect width="900" height="650" fill="#f8f9fa" rx="10" ry="10"/>
   
   <!-- Title -->
-  <text x="450" y="40" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#333">N2USD Stablecoin System: Contract Interactions &amp; Value Flow</text>
+  <text x="450" y="40" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#333">ETHIXUSD Stablecoin System: Contract Interactions &amp; Value Flow</text>
   
   <!-- Collateral Management Group -->
   <rect x="30" y="80" width="280" height="230" fill="#e3f2fd" stroke="#2196f3" stroke-width="2" rx="8" ry="8" opacity="0.8"/>
@@ -20,7 +20,7 @@
   
   <!-- Unstable Collateral -->
   <rect x="180" y="220" width="100" height="60" fill="#e1f5fe" stroke="#03a9f4" stroke-width="2" rx="5" ry="5"/>
-  <text x="230" y="250" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle">WETH/N2DR</text>
+  <text x="230" y="250" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle">WETH/ETHIX</text>
   <text x="230" y="270" font-family="Arial, sans-serif" font-size="12" text-anchor="middle">(Unstable)</text>
   
   <!-- Price Information Group -->
@@ -45,9 +45,9 @@
   <rect x="590" y="180" width="240" height="180" fill="#f3e5f5" stroke="#9c27b0" stroke-width="2" rx="8" ry="8" opacity="0.8"/>
   <text x="710" y="205" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#6a1b9a">Stablecoin Issuance</text>
   
-  <!-- N2USD Contract -->
+  <!-- ETHIXUSD Contract -->
   <rect x="630" y="220" width="160" height="120" fill="#e1bee7" stroke="#8e24aa" stroke-width="2" rx="5" ry="5"/>
-  <text x="710" y="270" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle">N2USD.sol</text>
+  <text x="710" y="270" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle">ETHIXUSD.sol</text>
   <text x="710" y="290" font-family="Arial, sans-serif" font-size="12" text-anchor="middle">(Stablecoin Token)</text>
   
   <!-- User Interactions Group -->
@@ -75,7 +75,7 @@
   <path d="M250,410 C300,410 350,330 370,290" stroke="#2e7d32" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
   <text x="300" y="380" font-family="Arial, sans-serif" font-size="10" fill="#2e7d32">Price Data</text>
   
-  <!-- Governance to N2USD (Mint/Burn) -->
+  <!-- Governance to ETHIXUSD (Mint/Burn) -->
   <path d="M530,270 L630,270" stroke="#e65100" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
   <text x="580" y="260" font-family="Arial, sans-serif" font-size="10" fill="#e65100">Mint/Burn</text>
   
@@ -83,7 +83,7 @@
   <path d="M450,340 C450,370 500,370 500,340 L500,310" stroke="#e65100" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
   <text x="475" y="375" font-family="Arial, sans-serif" font-size="10" fill="#e65100">Validate Peg</text>
   
-  <!-- User to N2USD -->
+  <!-- User to ETHIXUSD -->
   <path d="M610,450 L670,340" stroke="#c2185b" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
   <text x="650" y="410" font-family="Arial, sans-serif" font-size="10" fill="#c2185b">Buy/Sell/Transfer</text>
   
@@ -105,7 +105,7 @@
   <rect x="30" y="490" width="280" height="110" fill="#ffffff" stroke="#757575" stroke-width="1" rx="5" ry="5"/>
   <text x="170" y="510" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#333">Implementation Options</text>
   <text x="45" y="530" font-family="Arial, sans-serif" font-size="12" fill="#333">Option A: WETH + Chainlink Oracle</text>
-  <text x="45" y="550" font-family="Arial, sans-serif" font-size="12" fill="#333">Option B: N2DR + Custom Price Feed</text>
+  <text x="45" y="550" font-family="Arial, sans-serif" font-size="12" fill="#333">Option B: ETHIX + Custom Price Feed</text>
   <text x="45" y="570" font-family="Arial, sans-serif" font-size="12" fill="#333">Both maintain peg through rebalancing</text>
   
   <!-- System Features -->
