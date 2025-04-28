@@ -1,0 +1,78 @@
+<svg viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="500" fill="#f8f9fa" rx="10" ry="10"/>
+  
+  <!-- Title -->
+  <text x="400" y="40" font-family="Arial" font-size="24" text-anchor="middle" font-weight="bold" fill="#333">N2USD Stablecoin System Architecture</text>
+  
+  <!-- Contracts -->
+  <!-- USDT Contract -->
+  <rect x="100" y="100" width="140" height="70" rx="8" ry="8" fill="#6bb5ff" stroke="#4a86e8" stroke-width="2"/>
+  <text x="170" y="125" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold" fill="#fff">USDT.sol</text>
+  <text x="170" y="145" font-family="Arial" font-size="12" text-anchor="middle" fill="#fff">Stable Collateral</text>
+  
+  <!-- WETH/N2DR Contract -->
+  <rect x="100" y="240" width="140" height="70" rx="8" ry="8" fill="#6bb5ff" stroke="#4a86e8" stroke-width="2"/>
+  <text x="170" y="265" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold" fill="#fff">WETH/N2DR</text>
+  <text x="170" y="285" font-family="Arial" font-size="12" text-anchor="middle" fill="#fff">Unstable Collateral</text>
+  
+  <!-- Reserves Contract -->
+  <rect x="320" y="170" width="140" height="70" rx="8" ry="8" fill="#ff9e6b" stroke="#e67c52" stroke-width="2"/>
+  <text x="390" y="195" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold" fill="#fff">Reserves.sol</text>
+  <text x="390" y="215" font-family="Arial" font-size="12" text-anchor="middle" fill="#fff">Collateral Vault</text>
+  
+  <!-- PriceOracle Contract -->
+  <rect x="320" y="310" width="140" height="70" rx="8" ry="8" fill="#c39cff" stroke="#9b6bff" stroke-width="2"/>
+  <text x="390" y="335" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold" fill="#fff">PriceOracle.sol</text>
+  <text x="390" y="355" font-family="Arial" font-size="12" text-anchor="middle" fill="#fff">Price Feed Interface</text>
+  
+  <!-- Governance Contract -->
+  <rect x="540" y="240" width="140" height="70" rx="8" ry="8" fill="#78dbbe" stroke="#50c2a2" stroke-width="2"/>
+  <text x="610" y="265" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold" fill="#fff">Governance.sol</text>
+  <text x="610" y="285" font-family="Arial" font-size="12" text-anchor="middle" fill="#fff">Peg Management</text>
+  
+  <!-- N2USD Contract -->
+  <rect x="540" y="100" width="140" height="70" rx="8" ry="8" fill="#ffce73" stroke="#ffb546" stroke-width="2"/>
+  <text x="610" y="125" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold" fill="#fff">N2USD.sol</text>
+  <text x="610" y="145" font-family="Arial" font-size="12" text-anchor="middle" fill="#fff">Stablecoin Token</text>
+  
+  <!-- Chainlink Oracle -->
+  <rect x="320" y="400" width="140" height="50" rx="8" ry="8" fill="#e0e0e0" stroke="#a0a0a0" stroke-width="2"/>
+  <text x="390" y="430" font-family="Arial" font-size="14" text-anchor="middle" fill="#333">Chainlink Oracle</text>
+  
+  <!-- Arrows -->
+  <!-- USDT to Reserves -->
+  <path d="M 240 135 L 305 170" stroke="#666" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <text x="270" y="145" font-family="Arial" font-size="12" fill="#666">Deposit</text>
+  
+  <!-- WETH/N2DR to Reserves -->
+  <path d="M 240 275 L 305 240" stroke="#666" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <text x="270" y="270" font-family="Arial" font-size="12" fill="#666">Deposit</text>
+  
+  <!-- Reserves to Governance -->
+  <path d="M 460 205 L 525 240" stroke="#666" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <text x="490" y="215" font-family="Arial" font-size="12" fill="#666">Collateral Info</text>
+  
+  <!-- Oracle to Governance -->
+  <path d="M 460 345 L 525 290" stroke="#666" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <text x="490" y="330" font-family="Arial" font-size="12" fill="#666">Price Data</text>
+  
+  <!-- Chainlink to Oracle -->
+  <path d="M 390 400 L 390 380" stroke="#666" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <text x="405" y="390" font-family="Arial" font-size="12" fill="#666">ETH/USD</text>
+  
+  <!-- Governance to N2USD -->
+  <path d="M 610 240 L 610 170" stroke="#666" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <text x="620" y="205" font-family="Arial" font-size="12" fill="#666">Mint/Burn</text>
+  
+  <!-- Governance Self Loop -->
+  <path d="M 680 275 C 710 275, 710 245, 680 245" stroke="#666" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <text x="710" y="260" font-family="Arial" font-size="12" fill="#666">validatePeg()</text>
+  
+  <!-- Arrowhead marker -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#666"/>
+    </marker>
+  </defs>
+</svg>
