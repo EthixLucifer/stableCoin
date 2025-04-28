@@ -11,6 +11,10 @@ import "@openzeppelin/contracts/access/AccessControl.sol";
 import "./ethixusd.sol";
 import "./ethix.sol";
 
+// HEDERA TESTNET DEPLOYED ADDRESS
+// 0x3CDfe6EA6A4DeA5cA3DEB17c8F474d31C6039D17
+
+    
 contract Governance is Ownable, ReentrancyGuard, AccessControl { 
     using SafeMath for uint256;
     using SafeERC20 for IERC20;
@@ -50,9 +54,9 @@ contract Governance is Ownable, ReentrancyGuard, AccessControl {
     event RepegAction(uint256 time, uint256 amount);
     event Withdraw(uint256 time, uint256 amount);
 
-    constructor(ETHIXUSD _ethixusd, ETHIX ethix) Ownable(msg.sender){
+    constructor(ETHIXUSD _ethixusd, ETHIX _ethix) Ownable(msg.sender){
         ethixusd = _ethixusd;
-        ethix = ethix;
+        ethix = _ethix;
         _grantRole(DEFAULT_ADMIN_ROLE, _msgSender());
         _grantRole(GOVERN_ROLE, _msgSender());
     }

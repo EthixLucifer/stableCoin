@@ -66,41 +66,59 @@ verify amount by checking the rsvVault  for 0 id.
 
     <!-- 26.40 timestamp for the blog -->
 <!-- deploying the stablecoin with custom unstable collateral coin, this unstable collateral coin will act as real world ether, however with this fake ether we'll be able to fluctuate the price as we wish and witness the stablecoin auto rebalnce the collateral itself after executing the validate peg function.   -->
-<!-- deployment process with custom fake unstable collateral n2dr token -->
+<!-- deployment process with custom fake unstable collateral ethix token -->
     fake usdt
-    n2dr token smart contract
+    ethix token smart contract
     reserves smart contract
     n2usd stablecoin contract
     governance smart contract
 
 
-Important: imitate price fluctuation in token with setn2drTokenPrice function of governance contract
+Important: imitate price fluctuation in token with setethixTokenPrice function of governance contract
 
 
 <!-- execution process -->
 
 1. mint 200K wei USDT collateral from USDT.sol file
-2. in USDT.sol provide approval to reserves address and 200K wei amount
-3. mint 1Billion wei n2dr token in n2DR contract
-4. in n2DR contract approve reserves and governance smart contract address 1Billion wei token 
-5. in resrves.sol  addReserves collateral address USDT & N2DR tokens 
-6. in deposit function of reserves.sol at 0 pid deposit 200Kwei and at 1 pid deposit 10000000 wei tokens verify them later in the rsvVault function.
-7. in n2usd contract mint 1000000 wei N2usd tokens
-8. in governance contract run addcollateraltoken function and enter usdt and n2dr token address
-9. after that run the setReserveContract function and add the reserve contract address.
-10. in n2dr token add the address of governance contract in the grantRole function and manager role bytes 32 output.
-11. in governance contract run setN2drTokenPrice with value 80000000 (this is the price which you want your stable coin to be at all the time (80000000/1Billion = 0.08 ether is the price our stable coin will be auto rebalancing to)) and after that set the n2usd supply to be 1000000 wei  
-    1.  transfer 500000000 n2dr tokens to the governance smart contract.
-    2.  run the validate peg function. 
-    3.  check the unstable collateral amount it should display 10 million n2dr tokens
-    4.  check the unstable collateral price it should be around 0.08 (ether strikethrough here)
-    5.  check the stable collateral amount it should display 200k wei tokens
-    6.  check the stable collateral price it should be around 1^18
-    7.  n2dsupply should be 1 Billion tokens still 
-    8.  now again change the setn2drTokenPrice to something else and then run validate peg to verify if coin is stabalizing to the price of 1 dollar.
+2. 
+3. in USDT.sol provide approval to reserves address and 200K wei amount
+4. 
+5. mint 1Billion (1000000000000000000000000000) wei ethix token in ethix contract
+6. 
+7. in ethix contract approve reserves and governance smart contract address 1Billion wei token 
+
+8. in resrves.sol  addReserves collateral address USDT & ethix tokens 
+9. 
+10. in deposit function of reserves.sol at 0 pid deposit 200Kwei and at 1 pid deposit 10000000 wei tokens verify them later in the rsvVault function.
+
+11. in n2usd contract mint 1000000 wei N2usd tokens
+12. 
+
+13. in governance contract run addcollateraltoken function and enter usdt and ethix token address
+
+14. after that run the setReserveContract function and add the reserve contract address.
+
+
+
+15. in ethix token add the address of governance contract in the grantRole function and manager role bytes 32 output.
+
+
+16. in governance contract run setethixTokenPrice with value 80000000 (this is the price which you want your stable coin to be at all the time (80000000/1Billion = 0.08 ether is the price our stable coin will be auto rebalancing to)) and after that set the n2usd supply to be 1000000 wei
+      
+    1.  from ethix.sol contract transfer 500000000 ethix tokens to the governance smart contract.
     
+    2.  run the validate peg function. 
+    3.  
+    4.  check the unstable collateral amount it should display 10 million ethix tokens
+    5.  check the unstable collateral price it should be around 0.08 (ether strikethrough here)
+    6.  check the stable collateral amount it should display 200k wei tokens
+    7.  check the stable collateral price it should be around 1^18
+    8.  
+    9.  n2dsupply should be 1 Billion tokens still 
+    10. now again change the setethixTokenPrice to something else and then run validate peg to verify if coin is stabalizing to the price of 1 dollar.
+    <!-- check the latest transaction at governance.sol its either burn or mint -->
     that's it! 
 
-12. build the backend and connect it with blockchain.
-13. move on to building the frontend and backend and integrating them both together. 
+17. build the backend and connect it with blockchain.
+18. move on to building the frontend and backend and integrating them both together. 
 

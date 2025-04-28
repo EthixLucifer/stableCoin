@@ -1,7 +1,6 @@
 // SPDX-License-Identifier: MIT LICENSE
 
 pragma solidity ^0.8.18.0;
-
 import "@openzeppelin/contracts/access/Ownable.sol";
 import "@openzeppelin/contracts/utils/math/SafeMath.sol";
 import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
@@ -10,6 +9,8 @@ import "@openzeppelin/contracts/token/ERC20/extensions/ERC20Burnable.sol";
 import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 import "@openzeppelin/contracts/access/AccessControl.sol";
 
+// HEDERA TESTNET DEPLOYED ADDRESS
+// 0x92Bb7031d05B79519c2f02B545b88603aB1f6e28
 
 contract ETHIXUSD is ERC20, ERC20Burnable, Ownable, AccessControl {
 

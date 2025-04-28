@@ -9,6 +9,9 @@ import "@openzeppelin/contracts/access/Ownable.sol";
 import "@openzeppelin/contracts/security/ReentrancyGuard.sol";
 import "@openzeppelin/contracts/access/AccessControl.sol";
 
+// hedera testnet deployed address
+// 0xa50aFFA4b8641a885137F543CA039463Af990B88
+
 contract Reserves is Ownable, ReentrancyGuard, AccessControl { 
     using SafeMath for uint256;
     using SafeERC20 for IERC20;

@@ -12,6 +12,9 @@ contract USDT is ERC20, ERC20Burnable, Ownable {
     // 200000000000000000000000
     // 200K token to be minted initially
 
+    // hedera testnet deployed address
+    // 0xCC23c88749d77FFD930b9dE6Bc92E8ca11349105
+
   using SafeERC20 for ERC20;
 
   constructor() Ownable(msg.sender) ERC20("Tether USD", "USDT") {}

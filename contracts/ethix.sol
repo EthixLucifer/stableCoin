@@ -10,6 +10,8 @@ import "@openzeppelin/contracts/token/ERC20/extensions/ERC20Burnable.sol";
 import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 import "@openzeppelin/contracts/access/AccessControl.sol";
 
+// HEDERA TESTNET DEPLOYED ADDRESS
+// 0x56DEC8329622F14F48b0348Cbc7F5360774f924F 
 
 contract ETHIX is ERC20, ERC20Burnable, Ownable, AccessControl {
 
@@ -22,9 +24,9 @@ contract ETHIX is ERC20, ERC20Burnable, Ownable, AccessControl {
 
     bytes32 public constant MANAGER_ROLE = keccak256("MANAGER_ROLE");
 
-    constructor () ERC20("ETHIX Rewards Token", "ETHIX") {
-        _setupRole(DEFAULT_ADMIN_ROLE, _msgSender());
-        _setupRole(MANAGER_ROLE, _msgSender());
+    constructor () Ownable(msg.sender) ERC20("Ethix Rewards Token", "ETHIX") {
+        _grantRole(DEFAULT_ADMIN_ROLE, _msgSender());
+        _grantRole(MANAGER_ROLE, _msgSender());
     }
 
     function mint(uint256 amount) external {
